@@ -1,7 +1,7 @@
-all: browser 
+all: browser.out 
 #all: browser browser.exe
 
-browser: browser.go
+browser.out : browser.go
 	echo "Building for native"
 	go build -o browser.out browser.go
 	./browser.out
